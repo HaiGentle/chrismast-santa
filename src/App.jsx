@@ -1,4 +1,8 @@
 import "./App.css";
+import pngEgg from "./assets/pngegg.png";
+import christmasTree from "./assets/Christmas-Tree-with-Presents-Clipart.png";
+import cuteSanta from "./assets/cute-santa.png";
+import cuteReindeer from "./assets/cute-reindeer.png";
 
 const stars = new Array(100).fill(0).map((s) => {
   return {
@@ -29,28 +33,20 @@ function App() {
       </div>
 
       <div className="santa">
-        <img src="./src/assets/pngegg.png" width="100%" height="100%" />
+        <img src={pngEgg} width="100%" height="100%" />
         <div className="content">
           <p>Giáng sinh vui vẻ</p>
           <p>Thùy Thùy =))</p>
         </div>
       </div>
       <img
-        src="./src/assets/Christmas-Tree-with-Presents-Clipart.png"
+        src={christmasTree}
         alt="Giáng sinh vui vẻ"
         width={500}
         height={500}
       />
-      <img
-        className="cute-santa"
-        src="./src/assets/cute-santa.png"
-        alt="cute-santa"
-      />
-      <img
-        className="cute-reindeer"
-        src="./src/assets/cute-reindeer.png"
-        alt="cute-reindeer"
-      />
+      <img className="cute-santa" src={cuteSanta} alt="cute-santa" />
+      <img className="cute-reindeer" src={cuteReindeer} alt="cute-reindeer" />
     </div>
   );
 }
