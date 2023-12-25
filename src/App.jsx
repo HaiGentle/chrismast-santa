@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
 const stars = new Array(100).fill(0).map((s) => {
@@ -7,14 +6,6 @@ const stars = new Array(100).fill(0).map((s) => {
     y: Math.random() * window.innerHeight,
     size: Math.random() * 3,
     animationTime: Math.random() * 3,
-  };
-});
-
-const meteors = new Array(10).fill(0).map((s) => {
-  return {
-    x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight,
-    size: Math.random() * 3,
   };
 });
 
@@ -41,7 +32,7 @@ function App() {
         <img src="./src/assets/pngegg.png" width="100%" height="100%" />
         <div className="content">
           <p>Giáng sinh vui vẻ</p>
-          <p>Thỳ Thỳ =))</p>
+          <p>Thùy Thùy =))</p>
         </div>
       </div>
       <img
